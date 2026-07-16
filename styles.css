@@ -70,19 +70,3 @@ button{cursor:pointer}
 
 /* Merged unique rules */
 h1{color:blue}
-
-/* Animations */
-@keyframes float-in{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
-@keyframes pop-in{from{transform:scale(.98);opacity:0}to{transform:scale(1);opacity:1}}
-@keyframes btn-pulse{0%{transform:translateY(0) scale(1)}50%{transform:translateY(-2px) scale(1.02)}100%{transform:translateY(0) scale(1)}}
-@keyframes fade-out{to{opacity:0;transform:scale(.98)}}
-
-.hero-card{animation:float-in 420ms cubic-bezier(.2,.8,.2,1) both}
-.task-item{animation:pop-in 220ms cubic-bezier(.2,.8,.2,1) both}
-.primary-btn:hover{animation:btn-pulse 1.2s ease-in-out 0s 1}
-.task-delete:hover{transform:translateY(-2px) scale(1.02)}
-.task-item.completed{transition:opacity .24s ease,transform .22s ease}
-
-@media (prefers-reduced-motion:reduce){
-	.hero-card,.task-item,.primary-btn:hover{animation:none!important;transition:none!important}
-}

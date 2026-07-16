@@ -1,53 +1,62 @@
-# Taha's Web Project
+# Taha Todo App
 
-A small static website containing a simple HTML page, a JavaScript file, and two CSS stylesheets.
+A polished static todo list web app built with HTML, CSS, and JavaScript.
 
-## Files
+## About
 
-- `index.html` — Main HTML page
-- `script.js` — JavaScript used by the page
-- `styles/style1.css` — Primary stylesheet
-- `styles/style2.css` — Additional stylesheet
+This project is a modern task manager featuring a colorful top navigation bar, animated card layout, and responsive design. It lets users add tasks, mark them complete, filter by status, and clear completed tasks.
 
-## How to run
+## Features
 
-Open `index.html` in a browser. For a simple local server (recommended), run one of the following from the project root:
+- Add new tasks with a friendly input form
+- Mark tasks as completed or active
+- Filter tasks by `All`, `Active`, or `Completed`
+- Clear completed tasks with one click
+- Responsive layout for desktop and mobile
+- Colorful sticky navbar with mobile menu support
+- Smooth hover and entry animations
+- Tasks saved locally in browser storage
+
+## Project files
+
+- `index.html` — page structure and navigation
+- `styles.css` — styling, layout, animations, and navbar design
+- `script.js` — todo behavior, storage, and menu handling
+
+## How to use
+
+1. Open `index.html` directly, or run a local server.
+2. Enter a task in the input field and click **Add task**.
+3. Click the checkbox button on a task to toggle completion.
+4. Use the filter buttons to show active or completed tasks.
+5. Click **Clear completed** to remove finished items.
+
+## Run locally
+
+From the project root folder:
 
 ```bash
-# Python 3
 python -m http.server 8000
-
-# Or using Node (http-server)
-npx http-server -c-1 . 8000
 ```
 
-Then visit http://localhost:8000 in your browser.
+Then visit:
+
+```text
+http://localhost:8000
+```
+
+## Design notes
+
+The app uses a bright gradient navbar, clean hero card layout, and accessible task controls. It is designed to look modern while remaining simple and easy to use.
 
 ## Notes
 
-- This project is static and requires no build step.
-- Use the developer tools in your browser to inspect layout and scripts.
+- No build process is required.
+- The task list is stored in `localStorage`, so tasks remain after refreshing the page.
 
 ## License
 
-MIT — feel free to reuse and modify.
-
-Taharepo
-
-hello GitHub This is My Eight Repository
-
-This is my website: http://127.0.0.1:5500/index.html
-
-And You can show it on Google : www.google.com
-
-https://i.pinimg.com/originals/68/3d/9a/683d9a1a8150ee8b29bfd25d46804605.png
-
-
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+MIT — free to reuse or modify.
 
 
 

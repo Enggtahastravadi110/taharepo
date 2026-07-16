@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles/style1.css">
     <link rel="stylesheet" href="styles/style2.css">
 </head>
 <body>
-    <h1>hello</h1>
-    <p>THiS IS MY FIRST PARAGRAPH  12</p>
+  <main class="app-shell">
+    <section class="hero-card">
+      <div class="hero-copy">
+        <p class="eyebrow">Your tasks, simplified</p>
+        <h1>Todo list with clean focus</h1>
+        <p class="hero-description">Add, complete, filter, and clear tasks in a smooth responsive interface.</p>
+      </div>
+
+      <div class="task-panel">
+        <form id="todo-form" class="todo-form" autocomplete="off">
+          <label for="todo-input" class="visually-hidden">New task</label>
+          <input id="todo-input" name="todo" type="text" placeholder="Add a new task..." />
+          <button type="submit" class="primary-btn">Add task</button>
+        </form>
+
+        <div class="task-status-bar">
+          <span id="task-count">0 tasks left</span>
+          <button id="clear-completed" type="button" class="secondary-btn">Clear completed</button>
+        </div>
+
+        <ul id="todo-list" class="task-list" aria-live="polite"></ul>
+
+        <div class="task-filters" role="group" aria-label="Task filters">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="active">Active</button>
+          <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
